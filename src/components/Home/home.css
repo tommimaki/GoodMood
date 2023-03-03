@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+.bg {
+  font-family: "Signika Negative", sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "slider"
+    "hero";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.sliderSection {
+  margin-top: 20px;
+  grid-area: slider;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSection {
+  margin-top: 20px;
+  grid-area: hero;
+  background-color: #ccacf5;
+
+  padding: 20px;
+  color: white;
+  box-shadow: 0px 1px 5px black;
+  width: 100%;
+}
+
+.heroTitle,
+.heroSignature {
+  margin: 20px 0px;
+  font-family: "Climate Crisis", cursive;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+.heroText {
+  text-shadow: 1px 1px 1px #000000;
+}
