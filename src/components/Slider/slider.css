@@ -9,7 +9,6 @@
 
 .slide {
   margin: 0 10px;
-
   box-shadow: 0px 1px 5px black;
 }
 
@@ -28,12 +27,15 @@
     display: none;
   }
 
-  .mobile-image {
-    display: block;
+  .mobile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   .mobile-img img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
   }
 }
