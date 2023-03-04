@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Nanum+Gothic&family=Oxygen&family=Signika+Negative&display=swap");
+
+.product-container {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Signika Negative", sans-serif;
+}
+.product-title {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 3rem;
+}
+img {
+  width: 400px;
+}
+.product-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.product-grid {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-item {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.product-item p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0.5rem 1rem;
+}
+
+.product-item h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .product-images {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./NavbarStyles.css";
@@ -16,6 +16,12 @@ function Navbar() {
     navRef.current.classList.toggle("responsive");
   };
 
+  const [showAboutMenu, setShowAboutMenu] = useState(false);
+
+  const toggleAboutMenu = () => {
+    setShowAboutMenu(!showAboutMenu);
+  };
+
   return (
     <div className="container">
       {/* Renders a react icon with the size of 40px */}
@@ -25,12 +31,42 @@ function Navbar() {
         <Link className="headerLink" to="/" onClick={showNavbar}>
           Home
         </Link>
-        <Link className="headerLink" to="/about" onClick={showNavbar}>
-          About
-        </Link>
-
+        {/* <Link className="headerLink" to="/about" onClick={showNavbar}>
+          about
+        </Link> */}
         <a href="/#">Services</a>
         <a href="/#">Contact</a>
+        <div className="dropdown">
+          <button
+            className="buttonLink"
+            onClick={toggleAboutMenu}
+            // onMouseEnter={toggleAboutMenu}
+            // onMouseLeave={toggleAboutMenu}
+          >
+            About
+          </button>
+          {showAboutMenu && (
+            <div className="dropdown-menu">
+              <Link
+                onClick={() => {
+                  toggleAboutMenu();
+                  showNavbar();
+                }}
+                className="headerLink"
+                to="/Me"
+              >
+                Me
+              </Link>
+              <Link
+                className="headerLink"
+                onClick={toggleAboutMenu}
+                to="/about/studio"
+              >
+                Studio
+              </Link>
+            </div>
+          )}
+        </div>
         {/* Renders a button with the class of nav-btn nav-close-btn and an FaTimes icon inside */}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
