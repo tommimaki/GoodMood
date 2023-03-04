@@ -2,7 +2,7 @@ import Navbar from "./components/NavBar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Footer from "./components/Footer/Footer";
+
 import Microlips from "./components/Services/Microlips";
 import Eyelashes from "./components/Services/Eyelashes";
 import Me from "./components/About/Me";

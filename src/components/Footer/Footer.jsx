@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Footer.css";
 import { FaInstagram } from "react-icons/fa";
 
@@ -13,16 +13,20 @@ function Footer() {
           <div className="footerMenu">
             <ul>
               <li>
-                <a href="#">Home</a>
+                {/* <a href="#">Home</a> */}
+                home
               </li>
               <li>
-                <a href="#">Services</a>
+                {/* <a href="#">Services</a> */}
+                services
               </li>
               <li>
-                <a href="#">About Us</a>
+                {/* <a href="#">About Us</a> */}
+                about
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                {/* <a href="#">Contact Us</a> */}
+                contact
               </li>
             </ul>
           </div>
@@ -31,7 +35,11 @@ function Footer() {
           <div className="footerSocial">
             <ul>
               <li>
-                <a href="https://www.instagram.com/bynats.bs" target="_blank">
+                <a
+                  href="https://www.instagram.com/bynats.bs"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaInstagram />
                 </a>
               </li>
