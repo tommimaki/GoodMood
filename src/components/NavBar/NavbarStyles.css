@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+ */
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
 .container {
   display: flex;
   align-items: center;
@@ -6,15 +9,17 @@
   height: 80px;
   padding: 0 2rem;
   /* background-color: #fd8bf8; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(204, 172, 245, 1) 0%,
     rgba(253, 139, 248, 1) 100%
-  );
+  ); */
+  background-color: #f1f1f1;
+  /* color: #dbb2d1; */
   color: white;
   text-shadow: 2px 2px 4px #000000;
   box-shadow: 0px 1px 5px black;
-  font-family: "Climate Crisis", cursive;
+  font-family: "Gloock", serif;
 }
 
 nav a {
@@ -88,7 +93,10 @@ nav {
 }
 .headerLink {
   text-decoration: none;
+  /* color: white; */
+  /* color: #dbb2d1; */
   color: white;
+  text-shadow: 2px 2px 4px #000000;
   font-size: 20px;
   margin: 10px;
 }
@@ -99,11 +107,13 @@ nav {
 }
 .buttonLink {
   text-decoration: none;
+  /* color: #dbb2d1; */
   color: white;
+  text-shadow: 2px 2px 4px #000000;
   font-size: 20px;
   margin: 10px;
   background: transparent;
-  font-family: "Climate Crisis", cursive;
+  font-family: "Gloock", serif;
   border: none;
   text-shadow: 2px 2px 4px #000000;
   cursor: pointer;

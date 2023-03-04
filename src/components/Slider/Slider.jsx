@@ -26,7 +26,7 @@ const Slider = () => {
               <img
                 src={item.image}
                 alt="slider img"
-                style={{ maxWidth: "250px", maxHeight: "100%" }}
+                // style={{ maxWidth: "240px", maxHeight: "100%" }}
               />
             </div>
           );

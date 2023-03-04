@@ -7,9 +7,6 @@ import Footer from "../Footer/Footer";
 const Home = () => {
   return (
     <div className="bg">
-      <div className="sliderSection">
-        <Slider />
-      </div>
       <div className="homeContainer">
         <div className="heroSection">
           <h1 className="heroTitle">Bienvenidos A Good Mood</h1>
@@ -26,6 +23,9 @@ const Home = () => {
             tus expectativas{" "}
           </p>
           <h2 className="heroSignature">-By Nats</h2>
+        </div>
+        <div className="sliderSection">
+          <Slider />
         </div>
         <ServiceList />
       </div>
