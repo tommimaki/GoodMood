@@ -23,3 +23,11 @@ p {
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
+
+.sliderSection {
+  margin-top: 20px;
+  grid-area: slider;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

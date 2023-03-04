@@ -27,5 +27,13 @@
 }
 li {
   padding: 5px;
-  text-decoration: underline;
+}
+
+.link-text {
+  text-decoration: none;
+  color: white;
+}
+
+.link-text:hover {
+  color: rgba(204, 172, 245, 1);
 }

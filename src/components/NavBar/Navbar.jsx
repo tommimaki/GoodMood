@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./NavbarStyles.css";
@@ -17,9 +17,31 @@ function Navbar() {
   };
 
   const [showAboutMenu, setShowAboutMenu] = useState(false);
+  const [showServiceMenu, setShowServiceMenu] = useState(false);
 
   const toggleAboutMenu = () => {
     setShowAboutMenu(!showAboutMenu);
+  };
+
+  const toggleServiceMenu = () => {
+    setShowServiceMenu(!showServiceMenu);
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  const handleOutsideClick = (e) => {
+    if (
+      !navRef.current.contains(e.target) &&
+      !e.target.classList.contains("buttonLink")
+    ) {
+      setShowServiceMenu(false);
+      setShowAboutMenu(false);
+    }
   };
 
   return (
@@ -34,8 +56,41 @@ function Navbar() {
         {/* <Link className="headerLink" to="/about" onClick={showNavbar}>
           about
         </Link> */}
-        <a href="/#">Services</a>
-        <a href="/#">Contact</a>
+        <div className="dropdown">
+          <button className="buttonLink" onClick={toggleServiceMenu}>
+            Services
+          </button>
+          {showServiceMenu && (
+            <div className="dropdown-menu">
+              <Link
+                onClick={() => {
+                  toggleServiceMenu();
+                  showNavbar();
+                }}
+                className="headerLink"
+                to="/Eyelashes"
+              >
+                Eyelashes
+              </Link>
+              <Link
+                className="headerLink"
+                onClick={() => {
+                  toggleServiceMenu();
+                  showNavbar();
+                }}
+                to="/Microlips"
+              >
+                Microlips
+              </Link>
+            </div>
+          )}
+        </div>
+        {/* <Link className="headerLink" to="/Services" onClick={showNavbar}>
+          Services
+        </Link> */}
+        <Link className="headerLink" to="/Contact" onClick={showNavbar}>
+          Contact
+        </Link>
         <div className="dropdown">
           <button
             className="buttonLink"
@@ -59,8 +114,11 @@ function Navbar() {
               </Link>
               <Link
                 className="headerLink"
-                onClick={toggleAboutMenu}
-                to="/about/studio"
+                onClick={() => {
+                  toggleAboutMenu();
+                  showNavbar();
+                }}
+                to="/Studio"
               >
                 Studio
               </Link>

@@ -1,7 +1,8 @@
 import React from "react";
 import "./home.css";
 import Slider from "../Slider/Slider";
-import Services from "../Services/Services";
+import ServiceList from "../Services/ServiceList";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -26,8 +27,9 @@ const Home = () => {
           </p>
           <h2 className="heroSignature">-By Nats</h2>
         </div>
-        <Services />
+        <ServiceList />
       </div>
+      <Footer />
     </div>
   );
 };
