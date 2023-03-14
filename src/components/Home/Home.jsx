@@ -9,7 +9,10 @@ const Home = () => {
     <div className="bg">
       <div className="homeContainer">
         <div className="heroSection">
-          <h1 className="heroTitle">Bienvenidos A Good Mood &#x1F352;</h1>
+          <h1 className="heroTitle">
+            {" "}
+            &#x1F338; Bienvenidos A Good Mood &#x1F338;
+          </h1>
           <p className="heroText">
             lEspacio dedicado a la belleza y al empoderamiento que nos hace
             sentir el vernos y sentirnos mejor, siempre trabajamos para mejorar

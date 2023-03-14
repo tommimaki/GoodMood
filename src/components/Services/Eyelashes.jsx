@@ -8,7 +8,32 @@ function Eyelashes() {
   return (
     <div>
       <div className="product-container">
-        <h2 className="product-title">Servicios de Extensiones de Pestañas</h2>
+        <div className="description">
+          <h2 className="product-title">Extensiones de Pestañas</h2>
+
+          <h2 className="product-subtitle">Todo lo que necesitas saber</h2>
+          <p>
+            Las extensiones de pestañas son un tratamiento de belleza popular
+            que implica la adición de pestañas artificiales a tus pestañas
+            naturales. Las extensiones se aplican cuidadosamente con pegamento
+            para que parezcan naturales y puedas disfrutar de una mirada más
+            completa y definida. Las extensiones de pestañas pueden durar varias
+            semanas con el cuidado adecuado, lo que significa que puedes
+            disfrutar de una mirada glamurosa y lista para cualquier ocasión sin
+            tener que usar rímel o pestañas postizas todos los días.
+          </p>
+          <div className="product-images">
+            <div>
+              <h3>Antes</h3>
+              <img src={image2} alt="Antes" />
+            </div>
+
+            <div>
+              <h3>Despues</h3>
+              <img src={image2} alt="Despues" />
+            </div>
+          </div>
+        </div>
         <div className="product-grid">
           <div className="product-item">
             <h3>Extensiones de Pestañas Básicas</h3>
@@ -19,10 +44,6 @@ function Eyelashes() {
               hasta 4 semanas.
             </p>
             <h4>Precio: $100</h4>
-            <div className="product-images">
-              <img src={image2} alt="Antes" />
-              <img src={image2} alt="Después" />
-            </div>
           </div>
           <div className="product-item">
             <h3>Extensiones de Pestañas Premium</h3>
@@ -33,10 +54,6 @@ function Eyelashes() {
               que se adapte a su estilo y preferencias.
             </p>
             <h4>Precio: $150</h4>
-            <div className="product-images">
-              <img src={image2} alt="Antes" />
-              <img src={image2} alt="Después" />
-            </div>
           </div>
         </div>
       </div>

@@ -47,7 +47,7 @@ function Navbar() {
   return (
     <div className="container">
       <Link className="logo-link" to="/">
-        <h2 className="title"> Good Mood</h2>
+        <h2 className="title">Good Mood&#x1F352;</h2>
       </Link>
       {/* Sets the navRef as a reference to the nav element */}
       <nav ref={navRef}>
@@ -72,13 +72,13 @@ function Navbar() {
                   toggleServiceMenu();
                   showNavbar();
                 }}
-                className="headerLink"
+                className="dropdown-headerLink"
                 to="/Eyelashes"
               >
                 Eyelashes
               </Link>
               <Link
-                className="headerLink"
+                className="dropdown-headerLink"
                 onClick={() => {
                   toggleServiceMenu();
                   showNavbar();
@@ -88,7 +88,7 @@ function Navbar() {
                 Microlips
               </Link>
               <Link
-                className="headerLink"
+                className="dropdown-headerLink"
                 onClick={() => {
                   toggleServiceMenu();
                   showNavbar();
@@ -98,7 +98,7 @@ function Navbar() {
                 Hydralips
               </Link>
               <Link
-                className="headerLink"
+                className="dropdown-headerLink"
                 onClick={() => {
                   toggleServiceMenu();
                   showNavbar();
@@ -108,7 +108,7 @@ function Navbar() {
                 Microneedling
               </Link>
               <Link
-                className="headerLink"
+                className="dropdown-headerLink"
                 onClick={() => {
                   toggleServiceMenu();
                   showNavbar();
@@ -138,8 +138,6 @@ function Navbar() {
             className="buttonLink"
             onClick={toggleAboutMenu}
             type="button"
-            // onMouseEnter={toggleAboutMenu}
-            // onMouseLeave={toggleAboutMenu}
           >
             About
           </button>
@@ -150,13 +148,13 @@ function Navbar() {
                   toggleAboutMenu();
                   showNavbar();
                 }}
-                className="headerLink"
+                className="dropdown-headerLink"
                 to="/Me"
               >
                 Me
               </Link>
               <Link
-                className="headerLink"
+                className="dropdown-headerLink"
                 onClick={() => {
                   toggleAboutMenu();
                   showNavbar();

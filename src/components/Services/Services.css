@@ -2,17 +2,20 @@
 .servicesContainer {
   margin-top: 20px;
   height: 250px;
-  margin: 20px 0px;
+  margin: 45px 0px;
+  display: flex;
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-family: "Raleway", sans-serif;
-  /* text-align: center; */
+
+  align-items: center;
 }
 
 .serviceTitle {
   margin-bottom: 20px;
+  margin-right: 70px;
+  text-decoration: underline;
 }
 
 .serviceUl {
@@ -27,7 +30,6 @@ li {
 .link-text {
   text-decoration: none;
   color: black;
-  /* color: white; */
 }
 
 .link-text:hover {

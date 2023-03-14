@@ -1,28 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Nanum+Gothic&family=Oxygen&family=Signika+Negative&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Raleway&display=swap");
 .product-container {
   background-color: #fff;
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  font-family: "Signika Negative", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 100px;
+  margin: 0 auto;
+
+  width: 100%;
 }
 .product-title {
-  font-family: "Nanum Gothic", sans-serif;
   font-size: 3rem;
+  margin-bottom: 40px;
+}
+.product-subtitle {
+  margin-bottom: 20px;
 }
 img {
-  width: 400px;
+  max-width: 400px;
 }
+
 .product-images {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 .product-grid {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,11 +79,14 @@ img {
 }
 
 @media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  img {
+    max-width: 200px;
   }
-  .product-images {
+  .product-grid {
     flex-direction: column;
-    justify-content: center;
+  }
+
+  .description {
+    padding: 5px;
   }
 }

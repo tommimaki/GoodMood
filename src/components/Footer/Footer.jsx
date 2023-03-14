@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaRegEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -24,6 +24,15 @@ function Footer() {
                 rel="noreferrer"
               >
                 <FaInstagram />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/bynats.bs"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaRegEnvelope />
               </a>
             </li>
           </ul>

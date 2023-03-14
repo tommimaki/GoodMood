@@ -45,22 +45,3 @@ const ServiceList = () => {
 };
 
 export default ServiceList;
-
-// <ul className="serviceUl">
-//   <li>
-//     <Link className="link-text" to="/Microlips">
-//       {" "}
-//       Eyelashes&#x1F441;{" "}
-//     </Link>
-//   </li>
-//   <li>
-//     {" "}
-//     <Link className="link-text" to="/Microlips">
-//       {" "}
-//       Microlips&#x1F444;{" "}
-//     </Link>{" "}
-//   </li>
-//   <li>Hydralips&#x1FAE6; </li>
-//   <li>Microneedling Facial &#x1F486;</li>
-//   <li>Bb glow &#x1F478;</li>
-// </ul>
