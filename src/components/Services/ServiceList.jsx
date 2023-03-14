@@ -7,7 +7,7 @@ const ServiceList = () => {
       <h2 className="serviceTitle"> SERVICIOS &#x1F484;</h2>
       <ul className="serviceUl">
         <li>
-          <Link className="link-text" to="/Microlips">
+          <Link className="link-text" to="/Eyelashes">
             {" "}
             Eyelashes{" "}
           </Link>
@@ -19,9 +19,26 @@ const ServiceList = () => {
             Microlips{" "}
           </Link>{" "}
         </li>
-        <li>Hydralips </li>
-        <li>Microneedling Facial </li>
-        <li>Bb glow </li>
+        <li>
+          {" "}
+          <Link className="link-text" to="/Hydralips">
+            Hydralips
+          </Link>{" "}
+        </li>
+        <li>
+          {" "}
+          <Link className="link-text" to="/Microneedling">
+            {" "}
+            Microneedling Facial{" "}
+          </Link>{" "}
+        </li>
+        <li>
+          {" "}
+          <Link className="link-text" to="/BBglow">
+            {" "}
+            Bb Glow{" "}
+          </Link>{" "}
+        </li>
       </ul>
     </div>
   );

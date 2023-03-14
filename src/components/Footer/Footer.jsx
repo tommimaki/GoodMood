@@ -1,53 +1,35 @@
 import React from "react";
 import "./Footer.css";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
     <div className="footerC">
-      <div className="footerContainer">
-        <div className="footerTop">
-          <div className="footerLogo">
-            <h4> Good Mood</h4>
-          </div>
-          <div className="footerMenu">
-            <ul>
-              <li>
-                {/* <a href="#">Home</a> */}
-                home
-              </li>
-              <li>
-                {/* <a href="#">Services</a> */}
-                services
-              </li>
-              <li>
-                {/* <a href="#">About Us</a> */}
-                about
-              </li>
-              <li>
-                {/* <a href="#">Contact Us</a> */}
-                contact
-              </li>
-            </ul>
-          </div>
+      <div className="footerBottom">
+        <div className="footerSocial">
+          <ul>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola%2C%20quiero%20hacer%20una%20consulta"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/bynats.bs"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
+            </li>
+          </ul>
         </div>
-        <div className="footerBottom">
-          <div className="footerSocial">
-            <ul>
-              <li>
-                <a
-                  href="https://www.instagram.com/bynats.bs"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaInstagram />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footerCopy">
-            <p>© 2023 Good Mood. All Rights Reserved</p>
-          </div>
+        <div className="footerCopy">
+          <p>© 2023 Good Mood. All Rights Reserved</p>
         </div>
       </div>
     </div>

@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloock&family=Raleway&display=swap");
 .bg {
-  /* font-family: "Signika Negative", sans-serif; */
-
   height: 100vh;
   display: grid;
   grid-template-areas:
@@ -21,6 +19,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  background-color: #f1f1f1;
 }
 .heroSection {
   margin-top: 20px;
@@ -44,4 +43,9 @@
   text-align: center;
   font-family: "Raleway", sans-serif;
   /* text-shadow: 1px 1px 1px #000000; */
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
 }

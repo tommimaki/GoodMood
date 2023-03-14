@@ -46,8 +46,9 @@ function Navbar() {
 
   return (
     <div className="container">
-      {/* Renders a react icon with the size of 40px */}
-      <h2> Good Mood</h2>
+      <Link className="logo-link" to="/">
+        <h2> Good Mood</h2>
+      </Link>
       {/* Sets the navRef as a reference to the nav element */}
       <nav ref={navRef}>
         <Link className="headerLink" to="/" onClick={showNavbar}>
@@ -81,6 +82,36 @@ function Navbar() {
                 to="/Microlips"
               >
                 Microlips
+              </Link>
+              <Link
+                className="headerLink"
+                onClick={() => {
+                  toggleServiceMenu();
+                  showNavbar();
+                }}
+                to="/Hydralips"
+              >
+                Hydralips
+              </Link>
+              <Link
+                className="headerLink"
+                onClick={() => {
+                  toggleServiceMenu();
+                  showNavbar();
+                }}
+                to="/Microneedling"
+              >
+                Microneedling
+              </Link>
+              <Link
+                className="headerLink"
+                onClick={() => {
+                  toggleServiceMenu();
+                  showNavbar();
+                }}
+                to="/BBglow"
+              >
+                BB Glow
               </Link>
             </div>
           )}

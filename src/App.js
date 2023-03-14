@@ -5,6 +5,9 @@ import About from "./components/About/About";
 
 import Microlips from "./components/Services/Microlips";
 import Eyelashes from "./components/Services/Eyelashes";
+import HydraLips from "./components/Services/Hydralips";
+import Microneedling from "./components/Services/Microneedling";
+import BBglow from "./components/Services/BBglow";
 import Me from "./components/About/Me";
 import Studio from "./components/About/Studio";
 import Services from "./components/Services/Services";
@@ -18,6 +21,9 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Microlips" element={<Microlips />} />
         <Route path="/Eyelashes" element={<Eyelashes />} />
+        <Route path="/Hydralips" element={<HydraLips />} />
+        <Route path="/Microneedling" element={<Microneedling />} />
+        <Route path="/BBglow" element={<BBglow />} />
         <Route path="/Me" element={<Me />} />
         <Route path="/Studio" element={<Studio />} />
         <Route path="/Services" element={<Services />} />

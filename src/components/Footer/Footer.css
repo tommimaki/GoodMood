@@ -1,23 +1,16 @@
-.footerC {
+/* .footerC {
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: #f1f1f1;
   padding: 20px 0;
   box-sizing: border-box;
-  z-index: 100;
+  display: flex;
+  justify-content: center;
 }
 
 .footerC.show {
   opacity: 1;
-}
-
-.footerContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -42,60 +35,6 @@
   }
 }
 
-.footerLogo {
-  margin-right: 20px;
-}
-
-@media (max-width: 768px) {
-  .footerLogo {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-.footerLogo h4 {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.footerMenu ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .footerMenu ul {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-}
-
-.footerMenu li {
-  margin-right: 20px;
-}
-
-@media (max-width: 768px) {
-  .footerMenu li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-.footerMenu a {
-  color: #333;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.footerMenu a:hover {
-  color: #222;
-}
-
 .footerBottom {
   display: flex;
   justify-content: space-between;
@@ -107,9 +46,66 @@
 
 .footerSocial ul {
   list-style-type: none;
-  display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.footerSocial li {
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.footerSocial a {
+  color: #333;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerSocial a:hover {
+  color: #f95c85;
+}
+
+.footerCopy p {
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .footerCopy p {
+    padding: 20px;
+  }
+} */
+.footerC {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footerSocial ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .footerSocial li {
