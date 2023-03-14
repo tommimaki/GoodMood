@@ -9,7 +9,7 @@ const Home = () => {
     <div className="bg">
       <div className="homeContainer">
         <div className="heroSection">
-          <h1 className="heroTitle">Bienvenidos A Good Mood</h1>
+          <h1 className="heroTitle">Bienvenidos A Good Mood &#x1F352;</h1>
           <p className="heroText">
             lEspacio dedicado a la belleza y al empoderamiento que nos hace
             sentir el vernos y sentirnos mejor, siempre trabajamos para mejorar
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
           <div className="mapheight">
             <div className="map">
-              <h2>ubicación </h2>
+              <h2 className="location">ubicación </h2>
               <iframe
                 title="map"
                 width="100%"

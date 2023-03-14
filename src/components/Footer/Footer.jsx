@@ -10,7 +10,7 @@ function Footer() {
           <ul>
             <li>
               <a
-                href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola%2C%20quiero%20hacer%20una%20consulta"
+                href="https://api.whatsapp.com/send?phone=+51931772562&text=Hola%2C%20quiero%20hacer%20una%20consulta"
                 target="_blank"
                 rel="noreferrer"
               >

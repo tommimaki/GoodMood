@@ -117,6 +117,13 @@ function Navbar() {
               >
                 BB Glow
               </Link>
+
+              <button
+                className="dropdown-close-btn"
+                onClick={toggleServiceMenu}
+              >
+                <FaTimes />
+              </button>
             </div>
           )}
         </div>
@@ -158,6 +165,10 @@ function Navbar() {
               >
                 Studio
               </Link>
+
+              <button className="dropdown-close-btn" onClick={toggleAboutMenu}>
+                <FaTimes />
+              </button>
             </div>
           )}
         </div>
