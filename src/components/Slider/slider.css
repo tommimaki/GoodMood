@@ -2,9 +2,17 @@
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
-  height: 534px;
+  /* height: 534px; */
   width: 100%;
-  margin: 0 auto;
+  margin: auto auto;
+  padding: 20px;
+}
+
+.slide img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 500px;
 }
 
 .slide {
@@ -12,7 +20,7 @@
   box-shadow: 0px 1px 5px black;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .slider {
     display: flex;
   }

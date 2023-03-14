@@ -10,10 +10,11 @@
   padding: 0 2rem;
   background-color: #f1f1f1;
   color: white;
-  text-shadow: 1px 1px 2px #000000;
   box-shadow: 1px 1px 5px black;
-  font-family: "Gloock", serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
+  width: 100vw;
+  max-width: 40000px;
 }
 
 nav a {
@@ -44,7 +45,7 @@ nav {
   align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 769px) {
   .container .nav-btn {
     visibility: visible;
     opacity: 1;
@@ -85,33 +86,39 @@ nav {
     font-size: 1.5rem;
   }
 }
-.headerLink {
+
+.title {
   text-decoration: none;
-  /* color: white; */
-  /* color: #dbb2d1; */
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 20px;
+  font-size: 1.3rem;
   margin: 10px;
+  background: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  /* text-shadow: 2px 2px 4px #000000; */
+}
+
+.headerLink {
+  color: black;
+  font-size: 20px;
+}
+.buttonLink {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.title {
+  font-size: 1.7rem;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
 }
-.buttonLink {
-  text-decoration: none;
-  /* color: #dbb2d1; */
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 20px;
-  margin: 10px;
-  background: transparent;
-  font-family: "Gloock", serif;
-  border: none;
-  text-shadow: 2px 2px 4px #000000;
-  cursor: pointer;
-}
+
 button:hover {
   color: #ccacf5;
 }

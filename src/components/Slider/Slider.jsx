@@ -23,11 +23,7 @@ const Slider = () => {
         {sliderArr.map((item, index) => {
           return (
             <div key={index} className="slide">
-              <img
-                src={item.image}
-                alt="slider img"
-                // style={{ maxWidth: "240px", maxHeight: "100%" }}
-              />
+              <img src={item.image} alt="slider img" />
             </div>
           );
         })}

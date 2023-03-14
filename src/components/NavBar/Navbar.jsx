@@ -47,7 +47,7 @@ function Navbar() {
   return (
     <div className="container">
       <Link className="logo-link" to="/">
-        <h2> Good Mood</h2>
+        <h2 className="title"> Good Mood</h2>
       </Link>
       {/* Sets the navRef as a reference to the nav element */}
       <nav ref={navRef}>
@@ -58,7 +58,11 @@ function Navbar() {
           about
         </Link> */}
         <div className="dropdown">
-          <button className="buttonLink" onClick={toggleServiceMenu}>
+          <button
+            type="button"
+            className="buttonLink"
+            onClick={toggleServiceMenu}
+          >
             Services
           </button>
           {showServiceMenu && (
@@ -126,6 +130,7 @@ function Navbar() {
           <button
             className="buttonLink"
             onClick={toggleAboutMenu}
+            type="button"
             // onMouseEnter={toggleAboutMenu}
             // onMouseLeave={toggleAboutMenu}
           >

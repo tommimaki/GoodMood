@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloock&family=Raleway&display=swap");
 .servicesContainer {
   margin-top: 20px;
-  /* background: linear-gradient(
-    90deg,
-    rgba(204, 172, 245, 1) 0%,
-    rgba(253, 139, 248, 1) 100%
-  ); */
   height: 250px;
   margin: 20px 0px;
   display: flex;
@@ -13,20 +8,16 @@
   align-items: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
+  /* text-align: center; */
 }
 
 .serviceTitle {
-  font-family: "Gloock", serif;
   margin-bottom: 20px;
-  /* color: aliceblue; */
-  /* text-shadow: 2px 2px 4px #000000; */
 }
 
 .serviceUl {
   padding: 5px;
-  list-style: none;
-  /* color: white; */
-  /* text-shadow: 2px 2px 4px #000000; */
+  list-style: circle;
 }
 li {
   padding: 5px;
