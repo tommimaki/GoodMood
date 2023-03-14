@@ -49,3 +49,58 @@
   text-decoration: none;
   color: white;
 }
+
+/* .bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.serviceList {
+  width: 40%;
+}
+
+.map {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  flex: 1;
+  width: 60%;
+  height: 400px;
+  margin-right: 100px;
+} */
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.serviceList {
+  width: 40%;
+}
+
+.map {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  flex: 1;
+  width: 60%;
+  height: 400px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .bottomSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceList {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .map {
+    width: 100%;
+    margin-right: 0;
+  }
+}
