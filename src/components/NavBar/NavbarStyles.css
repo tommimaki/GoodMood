@@ -64,7 +64,6 @@ nav {
     background-color: #d5d1d1;
     transition: 1s;
     transform: translateX(100vh);
-    border-bottom: 2px solid black;
   }
 
   .container .responsive {
@@ -131,7 +130,7 @@ button:hover {
   padding: 20px 16px;
   margin-top: 5px;
   border-radius: 5px;
-  border: 2px solid black;
+  border-bottom: 1px solid black;
   color: black;
   text-align: left;
   transform: translateX(-50%); /* Add this */
