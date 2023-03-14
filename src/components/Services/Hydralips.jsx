@@ -1,5 +1,7 @@
 import React from "react";
-import image2 from "../../assets/image2.jpeg";
+import hydrabefore from "../../assets/hydrabefore.jpg";
+import hydraafter from "../../assets/hydraafter.jpg";
+
 import Footer from "../Footer/Footer";
 import "./Productstyle.css";
 
@@ -27,12 +29,12 @@ function HydraLips() {
           <div className="product-images">
             <div>
               <h3>Antes</h3>
-              <img src={image2} alt="Antes" />
+              <img src={hydrabefore} alt="Antes" />
             </div>
 
             <div>
               <h3>Despues</h3>
-              <img src={image2} alt="Despues" />
+              <img src={hydraafter} alt="Despues" />
             </div>
           </div>
         </div>

@@ -1,5 +1,8 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+
+import studio1 from "../../assets/studio1.jpg";
+import studio2 from "../../assets/studio2.jpg";
 import "./AboutStyles.css";
 
 function Studio() {
@@ -18,6 +21,15 @@ function Studio() {
           acogedor. Además, contamos con las últimas tecnologías y herramientas
           para garantizar que obtengas los mejores resultados posibles.
         </p>
+        <div className="image-container">
+          <div className="image-box">
+            <img src={studio2} alt="Studio" />
+          </div>
+          <div className="image-box">
+            <img src={studio1} alt="Studio" />
+          </div>
+        </div>
+
         <div style={{ height: "500px", width: "100%" }}>
           <iframe
             title="map"

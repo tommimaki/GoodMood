@@ -54,9 +54,6 @@ function Navbar() {
         <Link className="headerLink" to="/" onClick={showNavbar}>
           Home
         </Link>
-        {/* <Link className="headerLink" to="/about" onClick={showNavbar}>
-          about
-        </Link> */}
         <div className="dropdown">
           <button
             type="button"
@@ -127,9 +124,7 @@ function Navbar() {
             </div>
           )}
         </div>
-        {/* <Link className="headerLink" to="/Services" onClick={showNavbar}>
-          Services
-        </Link> */}
+
         <Link className="headerLink" to="/Contact" onClick={showNavbar}>
           Contact
         </Link>
@@ -171,9 +166,15 @@ function Navbar() {
           )}
         </div>
         {/* Renders a button with the class of nav-btn nav-close-btn and an FaTimes icon inside */}
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+        <div className="nav-close-wrapper">
+          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <FaTimes />
+          </button>
+        </div>
+
+        {/* <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
-        </button>
+        </button> */}
       </nav>
       {/* Renders a button with the class of nav-btn and an FaBars icon inside */}
       <button className="nav-btn" onClick={showNavbar}>
