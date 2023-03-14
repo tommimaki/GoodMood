@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import "./Contact.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -24,7 +25,17 @@ function ContactForm() {
   return (
     <div>
       <div className="contact-form-container">
-        <h2>Contact Us</h2>
+        <div className="whatsapp">
+          <h2 className="title">Mándame un mensaje por Whatsapp</h2>
+          <a
+            href="https://api.whatsapp.com/send?phone=+51931772562&text=Hola%2C%20quiero%20hacer%20una%20consulta"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaWhatsapp />
+          </a>
+        </div>
+        <h2 className="title">Envíame un correo electrónico</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>

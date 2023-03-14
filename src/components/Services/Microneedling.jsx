@@ -7,9 +7,35 @@ function Microneedling() {
   return (
     <div>
       <div className="product-container">
-        <h2 className="product-title">
-          Microneedling Facial - Tratamiento para la piel
-        </h2>
+        <div className="description">
+          <h2 className="product-title">
+            Microneedling Facial - Tratamiento para la piel
+          </h2>
+
+          <h2 className="product-subtitle">Todo lo que necesitas saber</h2>
+          <p>
+            Las extensiones de pestañas son un tratamiento de belleza popular
+            que implica la adición de pestañas artificiales a tus pestañas
+            naturales. Las extensiones se aplican cuidadosamente con pegamento
+            para que parezcan naturales y puedas disfrutar de una mirada más
+            completa y definida. Las extensiones de pestañas pueden durar varias
+            semanas con el cuidado adecuado, lo que significa que puedes
+            disfrutar de una mirada glamurosa y lista para cualquier ocasión sin
+            tener que usar rímel o pestañas postizas todos los días.
+          </p>
+          <div className="product-images">
+            <div>
+              <h3>Antes</h3>
+              <img src={image2} alt="Antes" />
+            </div>
+
+            <div>
+              <h3>Despues</h3>
+              <img src={image2} alt="Despues" />
+            </div>
+          </div>
+        </div>
+
         <div className="product-grid">
           <div className="product-item">
             <h3>Microneedling Facial - Tratamiento Básico</h3>
@@ -23,10 +49,6 @@ function Microneedling() {
               Los resultados son inmediatos y duran varias semanas.
             </p>
             <h4>Precio: $150</h4>
-            <div className="product-images">
-              <img src={image2} alt="Antes" />
-              <img src={image2} alt="Después" />
-            </div>
           </div>
           <div className="product-item">
             <h3>Microneedling Facial - Tratamiento Premium</h3>
@@ -40,10 +62,6 @@ function Microneedling() {
               deseados.
             </p>
             <h4>Precio: $250</h4>
-            <div className="product-images">
-              <img src={image2} alt="Antes" />
-              <img src={image2} alt="Después" />
-            </div>
           </div>
         </div>
       </div>

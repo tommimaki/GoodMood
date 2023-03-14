@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Raleway&display=swap");
 .contact-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 120px;
+  font-family: "Raleway", sans-serif;
 }
 
 form {
@@ -11,7 +13,9 @@ form {
   flex-direction: column;
   align-items: center;
 }
-
+.title {
+  margin-bottom: 40px;
+}
 .form-group {
   display: flex;
   flex-direction: column;
@@ -48,4 +52,16 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #555;
+}
+
+.whatsapp {
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+.whatsapp a {
+  font-size: 3rem;
+  color: green;
+  margin-top: 10px;
 }
