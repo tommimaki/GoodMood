@@ -26,7 +26,7 @@ function ContactForm() {
     <div>
       <div className="contact-form-container">
         <div className="whatsapp">
-          <h2 className="title">Mándame un mensaje por Whatsapp</h2>
+          <h3 className="contact-title">Mándame un mensaje por Whatsapp</h3>
           <a
             href="https://api.whatsapp.com/send?phone=+51931772562&text=Hola%2C%20quiero%20hacer%20una%20consulta"
             target="_blank"
@@ -35,7 +35,7 @@ function ContactForm() {
             <FaWhatsapp />
           </a>
         </div>
-        <h2 className="title">Envíame un correo electrónico</h2>
+        <h3 className="contact-title">Envíame un correo electrónico</h3>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
