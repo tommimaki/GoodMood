@@ -32,7 +32,7 @@ const Home = () => {
             <ServiceList />
           </div>
           <div className="map">
-            <h3>location </h3>
+            <h>location </h>
             <iframe
               title="map"
               width="100%"
