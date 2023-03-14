@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Raleway&display=swap");
 .about-container {
-  max-width: 80%;
-
+  font-family: "Raleway", sans-serif;
   margin: 40px auto;
   padding: 2rem;
   text-align: center;
@@ -15,12 +15,14 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .sliderSection {

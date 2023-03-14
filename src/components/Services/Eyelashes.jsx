@@ -1,7 +1,6 @@
 import React from "react";
 import image2 from "../../assets/image2.jpeg";
 import Footer from "../Footer/Footer";
-// import antesLashes from "../../assets/antesLashes.JPEG";
 import "./Productstyle.css";
 
 function Eyelashes() {
