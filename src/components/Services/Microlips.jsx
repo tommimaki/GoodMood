@@ -8,9 +8,9 @@ function Microlips() {
     <div>
       <div className="product-container">
         <div className="description">
-          <h2 className="product-title"> Microlips </h2>
+          <h3 className="product-title"> Microlips </h3>
 
-          <h2 className="product-subtitle">Todo lo que necesitas saber</h2>
+          <h4 className="product-subtitle">Todo lo que necesitas saber</h4>
           <p>
             Las extensiones de pestañas son un tratamiento de belleza popular
             que implica la adición de pestañas artificiales a tus pestañas

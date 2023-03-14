@@ -10,10 +10,10 @@ function HydraLips() {
     <div>
       <div className="product-container">
         <div className="description">
-          <h2 className="product-title">
+          <h3 className="product-title">
             {" "}
             Hydra Lips - Hidratación y rejuvenecimiento labial
-          </h2>
+          </h3>
 
           <h2 className="product-subtitle">Todo lo que necesitas saber</h2>
           <p>
