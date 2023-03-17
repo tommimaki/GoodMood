@@ -24,12 +24,12 @@ function Eyelashes() {
           <div className="product-images">
             <div>
               <h3>Antes</h3>
-              <img src={image2} alt="Antes" />
+              <img src={image2} className="product-img" alt="Antes" />
             </div>
 
             <div>
               <h3>Despues</h3>
-              <img src={image2} alt="Despues" />
+              <img src={image2} className="product-img" alt="Despues" />
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
-import hydrabefore from "../../assets/hydrabefore.jpg";
-import hydraafter from "../../assets/hydraafter.jpg";
+import hydrabefore from "../../assets/hydraBefore.jpeg";
+import hydraafter from "../../assets/hydraAfter.jpeg";
+import hydraneedle from "../../assets/hydraneedle.jpeg";
 
 import Footer from "../Footer/Footer";
 import "./Productstyle.css";
@@ -10,31 +11,43 @@ function HydraLips() {
     <div>
       <div className="product-container">
         <div className="description">
-          <h3 className="product-title">
+          <h2 className="product-title">
             {" "}
             Hydra Lips - Hidratación y rejuvenecimiento labial
-          </h3>
+          </h2>
 
           <h2 className="product-subtitle">Todo lo que necesitas saber</h2>
+          <div>
+            <h3>Despues</h3>
+            <img src={hydraneedle} className="product-img" alt="Despues" />
+          </div>
           <p>
-            Las extensiones de pestañas son un tratamiento de belleza popular
-            que implica la adición de pestañas artificiales a tus pestañas
-            naturales. Las extensiones se aplican cuidadosamente con pegamento
-            para que parezcan naturales y puedas disfrutar de una mirada más
-            completa y definida. Las extensiones de pestañas pueden durar varias
-            semanas con el cuidado adecuado, lo que significa que puedes
-            disfrutar de una mirada glamurosa y lista para cualquier ocasión sin
-            tener que usar rímel o pestañas postizas todos los días.
+            Hydra Lips es un servicio de hidratación y rejuvenecimiento labial.
+            Nuestro objetivo es brindar a nuestros clientes labios hidratados y
+            suaves, así como mejorar la apariencia y textura de los labios.
+          </p>
+          <p>
+            Utilizamos técnicas y productos especializados para hidratar
+            profundamente los labios y reducir la apariencia de líneas finas y
+            arrugas. También ofrecemos opciones personalizadas para satisfacer
+            las necesidades y preferencias de nuestros clientes.
+          </p>
+          <p>
+            En Hydra Lips, creemos en la importancia de cuidar la salud y
+            belleza de los labios. Nuestros servicios están diseñados para
+            proporcionar resultados efectivos y duraderos, y nuestro equipo está
+            comprometido en brindar un servicio excepcional a nuestros clientes.
+            ¡Ven a visitarnos y disfruta de labios hidratados y rejuvenecidos!
           </p>
           <div className="product-images">
             <div>
               <h3>Antes</h3>
-              <img src={hydrabefore} alt="Antes" />
+              <img src={hydrabefore} className="product-img" alt="Antes" />
             </div>
 
             <div>
               <h3>Despues</h3>
-              <img src={hydraafter} alt="Despues" />
+              <img src={hydraafter} className="product-img" alt="Despues" />
             </div>
           </div>
         </div>
