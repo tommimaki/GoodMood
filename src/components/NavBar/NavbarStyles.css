@@ -6,14 +6,17 @@
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   color: white;
   /* box-shadow: 1px 1px 5px black; */
   border-bottom: 1px solid black;
   font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
   width: 100vw;
-  max-width: 40000px;
+
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 nav a {
@@ -62,9 +65,10 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background-color: #d5d1d1;
+    background-color: #ffffff;
     transition: 1s;
     transform: translateX(100vh);
+    border: 2px black solid;
   }
 
   .container .responsive {

@@ -2,6 +2,7 @@ import React from "react";
 import image2 from "../../assets/image2.jpeg";
 import Footer from "../Footer/Footer";
 import "./Productstyle.css";
+import { Link } from "react-router-dom";
 
 function Microneedling() {
   return (
@@ -49,6 +50,11 @@ function Microneedling() {
               Los resultados son inmediatos y duran varias semanas.
             </p>
             <h4>Precio: $150</h4>
+            <div className="reserve-button">
+              <Link to="/contact" className="button-link">
+                Reservar Cita
+              </Link>
+            </div>
           </div>
           <div className="product-item">
             <h3>Microneedling Facial - Tratamiento Premium</h3>
@@ -62,6 +68,11 @@ function Microneedling() {
               deseados.
             </p>
             <h4>Precio: $250</h4>
+            <div className="reserve-button">
+              <Link to="/contact" className="button-link">
+                Reservar Cita
+              </Link>
+            </div>
           </div>
         </div>
       </div>

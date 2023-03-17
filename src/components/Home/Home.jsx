@@ -37,7 +37,6 @@ const Home = () => {
           </div>
           <div className="mapheight">
             <div className="map">
-              <h3 className="location">ubicación </h3>
               <iframe
                 title="map"
                 width="100%"

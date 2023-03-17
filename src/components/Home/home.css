@@ -85,14 +85,12 @@
 
   .mapheight {
     height: 250px;
-    width: 100%;
+    width: 90%;
     display: flex;
     margin-bottom: 70px;
   }
   .map {
-    width: 90%;
     margin-right: 0;
-    height: 500px;
   }
 }
 
