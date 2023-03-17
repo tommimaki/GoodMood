@@ -2,7 +2,7 @@ import React from "react";
 import hydrabefore from "../../assets/hydraBefore.jpeg";
 import hydraafter from "../../assets/hydraAfter.jpeg";
 import hydraneedle from "../../assets/hydraneedle.jpeg";
-
+import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import "./Productstyle.css";
 
@@ -16,9 +16,7 @@ function HydraLips() {
             Hydra Lips - Hidratación y rejuvenecimiento labial
           </h2>
 
-          <h2 className="product-subtitle">Todo lo que necesitas saber</h2>
           <div>
-            <h3>Despues</h3>
             <img src={hydraneedle} className="product-img" alt="Despues" />
           </div>
           <p>
@@ -51,7 +49,6 @@ function HydraLips() {
             </div>
           </div>
         </div>
-
         <div className="product-grid">
           <div className="product-item">
             <h3>Hydra Lips - Tratamiento Hidratante</h3>
@@ -64,6 +61,11 @@ function HydraLips() {
               apariencia. Los resultados son inmediatos y duran varias semanas.
             </p>
             <h4>Precio: $120</h4>
+            <div className="reserve-button">
+              <Link to="/contact" className="button-link">
+                Reservar Cita
+              </Link>
+            </div>
           </div>
         </div>
       </div>

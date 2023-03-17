@@ -41,6 +41,11 @@
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .product-item h3 {
@@ -80,6 +85,20 @@
   object-position: center;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+.reserve-button .button-link {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.reserve-button .button-link:hover {
+  background-color: #333;
 }
 
 @media (max-width: 768px) {
